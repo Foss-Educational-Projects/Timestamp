@@ -1,0 +1,58 @@
+Arguments: 
+  D:\APPLICATIONS\Installed_Apps\Programming\PLS\Node\node.exe D:\APPLICATIONS\Installed_Apps\Programming\Packages\.npm-global\node_modules\yarn\bin\yarn.js add nunjacks
+
+PATH: 
+  C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\OpenSSH\;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\WindowsApps;D:\APPLICATIONS\Installed_Apps\Programming\VCS\Mercurial;D:\APPLICATIONS\Installed_Apps\Programming\File_Integrity_Checker\Gpg4win\..\GnuPG\bin;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files (x86)\Neovim\bin;D:\APPLICATIONS\Installed_Apps\Programming\Compilers\LLVM\bin;C:\Users\foster\AppData\Local\Microsoft\WindowsApps;D:\APPLICATIONS\Installed_Apps\Programming\Container_Managers\Vagrant\bin;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;D:\APPLICATIONS\Installed_Apps\Programming\Language_Servers\Rust\extension\server;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet\;D:\APPLICATIONS\Installed_Apps\Apps\7-Zip;D:\APPLICATIONS\Installed_Apps\Programming\VCS\Git\cmd;D:\APPLICATIONS\Installed_Apps\Programming\VCS_Clients\Github_CLI\;C:\Program Files\Docker\Docker\resources\bin;D:\APPLICATIONS\Installed_Apps\Programming\Cloud_Tools\AWS\;C:\Users\foster\AppData\Local\JetBrains\Toolbox\scripts;D:\APPLICATIONS\Installed_Apps\Programming\PLS\ActiveTCL\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Cargo\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Crystal;D:\APPLICATIONS\Installed_Apps\Programming\PLS\D\dmd2\windows\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Dart\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Deno;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Elixir\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Elm\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Erlang\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Go\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Groovy\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Haskell\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Java\JDK\JDK-19\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Julia\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Kotlin\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Lisp\CLISP;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Lisp\SBCL;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Lua;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Nim\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Node;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Perl\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Perl\site\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\PHP;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Python-3;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Python-3\Scripts;D:\APPLICATIONS\Installed_Apps\Programming\PLS\R\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Racket;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Rakudo\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Ruby\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Scala\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Solidity;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Swift\bin;D:\APPLICATIONS\Installed_Apps\Programming\PLS\V;D:\APPLICATIONS\Installed_Apps\Programming\PLS\Zig;D:\APPLICATIONS\Installed_Apps\Programming\Build_Tools\Bazel;D:\APPLICATIONS\Installed_Apps\Programming\Build_Tools\Gradle\bin;D:\APPLICATIONS\Installed_Apps\Programming\Build_Tools\Maven\bin;D:\APPLICATIONS\Installed_Apps\Programming\Compilers\Rebar3;D:\APPLICATIONS\Installed_Apps\Programming\Compilers\LLVM\bin;D:\APPLICATIONS\Installed_Apps\Programming\Compilers\DMC\dm\bin;D:\APPLICATIONS\Installed_Apps\Programming\Compilers\MSYS2\mingw64\bin;D:\APPLICATIONS\Installed_Apps\Programming\Frameworks\symfony;D:\APPLICATIONS\Installed_Apps\Programming\Text_Editors\Helix;D:\APPLICATIONS\Installed_Apps\Programming\Text_Editors\Emacs\emacs-28.1\bin;D:\APPLICATIONS\Installed_Apps\Programming\PL_Managers\Sbt\bin;D:\APPLICATIONS\Installed_Apps\Programming\PL_Managers\Coursier;D:\APPLICATIONS\Installed_Apps\Programming\VCS_Clients\Gitea;D:\APPLICATIONS\Installed_Apps\Programming\VCS_Clients\Github_CLI;D:\APPLICATIONS\Installed_Apps\Programming\Packages\Pnpm;D:\APPLICATIONS\Installed_Apps\Programming\Packages\Yarn\bin;D:\APPLICATIONS\Installed_Apps\Programming\Packages\.deno\bin;D:\APPLICATIONS\Installed_Apps\Programming\Packages\.npm-global;D:\APPLICATIONS\Installed_Apps\Programming\Dependency_Managers\composer\vendor\bin;D:\APPLICATIONS\Installed_Apps\Programming\Servers\NGinX\bin;D:\APPLICATIONS\Installed_Apps\Programming\Terminals\StarShip;D:\APPLICATIONS\Installed_Apps\Programming\Databases\SQL\MySQL\MySQL Server 8.0\bin;D:\APPLICATIONS\Installed_Apps\Programming\Databases\SQL\CockroachDB;D:\APPLICATIONS\Installed_Apps\Programming\Databases\SQL\MonetDB5\bin;D:\APPLICATIONS\Installed_Apps\Programming\Databases\NoSQL\RavenDB\Server;D:\APPLICATIONS\Installed_Apps\Programming\Databases\ORM_Management_Tools\Hasura;D:\APPLICATIONS\Installed_Apps\Programming\Tools\roswell;D:\APPLICATIONS\Installed_Apps\Programming\Tools\curl\bin;D:\APPLICATIONS\Installed_Apps\Programming\SDK\Mobile_SDKs\Android_SDK\platform-tools;C:\Users\foster\.dotnet\tools;C:\Users\foster\go\bin;D:\APPLICATIONS\Installed_Apps\Programming\SDK\Mobile_SDKs\Flutter_SDK\bin;
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npmjs.com/nunjacks: An error occurred.
+      at params.callback [as _callback] (D:\APPLICATIONS\Installed_Apps\Programming\Packages\.npm-global\node_modules\yarn\lib\cli.js:66145:18)
+      at self.callback (D:\APPLICATIONS\Installed_Apps\Programming\Packages\.npm-global\node_modules\yarn\lib\cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (D:\APPLICATIONS\Installed_Apps\Programming\Packages\.npm-global\node_modules\yarn\lib\cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (D:\APPLICATIONS\Installed_Apps\Programming\Packages\.npm-global\node_modules\yarn\lib\cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "file_metadata",
+    "version": "0.0.1",
+    "description": "API project for freeCodeCamp",
+    "main": "index.js",
+    "scripts": {
+      "start": "node index.js"
+    },
+    "dependencies": {
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "cors": "^2.8.5"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/freeCodeCamp/boilerplate-project-filemetadata"
+    },
+    "keywords": [
+      "node",
+      "express"
+    ],
+    "license": "MIT"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
