@@ -45,7 +45,7 @@ app.get("/api/:date", (req, res) => {
             console.log("else if")
             res.json({ error: "Invalid Date" })
         }
-        else if (!new Date.parse()) {
+        else if (Date.parse(date) === NaN) {
             res.json({ error: "Invalid Date" })
         }
         else {
