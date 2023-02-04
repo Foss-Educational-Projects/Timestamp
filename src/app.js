@@ -21,11 +21,13 @@ app.get('/', function (req, res) {
 });
 app.get("/api", (req, res) => {
     const UNIX = new Date().getTime();
+
     const UTC = new Date().toUTCString();
     res.json({ unix: UNIX, utc: UTC })
 })
 app.get("/api/:date", (req, res) => {
     const date = req.params.date
+    console.log(new Date(parseInt(date)))
     const regTest1 = regex1.test(date);
     const regTest2 = regex2.test(date);
     if (regTest1) {
@@ -45,14 +47,15 @@ app.get("/api/:date", (req, res) => {
             console.log("else if")
             res.json({ error: "Invalid Date" })
         }
-        else if (Date.parse(date) === NaN) {
-            res.json({ error: "Invalid Date" })
-        }
-        else {
+        else if (new Date(parseInt(date)) !== NaN) {
             console.log(`${regTest1} from else else`)
             const UNIX = new Date(parseInt(date)).getTime();
             const UTC = new Date(parseInt(date)).toUTCString();
             res.json({ unix: UNIX, utc: UTC })
+        }
+        else {
+            res.json({ error: "Invalid Date" })
+
         }
     }
 })
