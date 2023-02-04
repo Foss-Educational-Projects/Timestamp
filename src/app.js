@@ -25,9 +25,9 @@ app.get("/api", (req, res) => {
     const UTC = new Date().toUTCString();
     res.json({ unix: UNIX, utc: UTC })
 })
-app.get("/api/timestamp/:date_string?", (req, res) => {
+app.get("/api/:date_string?", (req, res) => {
     const date = req.params.date_string
-    console.log(new Date(parseInt(date)))
+    console.log(new Date(parseInt("2022-12-12")))
     const regTest1 = regex1.test(date);
     const regTest2 = regex2.test(date);
     if (regTest1) {
