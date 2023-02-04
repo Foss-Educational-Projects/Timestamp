@@ -1,42 +1,57 @@
 require('dotenv').config()
 const path = require('path')
-const njk = require('nunjucks')
 const express = require('express');
-const multer = require('multer');
 const cors = require('cors');
 
 const app = express();
-const upload = multer({ dest: path.join(__dirname, "files") })
 
 const { server } = require('./utils/server')
 
-njk.configure(path.join(__dirname, 'views'), {
-  autoescape: true,
-  express: app
-})
+app.set("view engine", "pug")
+app.set("views", path.join(__dirname, "/views"))
 app.use(cors());
 app.use(express.static(path.join(__dirname, './assets')));
 app.use(express.static(path.join(__dirname, './../public')));
 
+const regex1 = new RegExp(/^([12]\d{3}-((0)?[1-9]|1[0-2])-((0)?[1-9]|[12]\d|3[01]))/mi)
+const regex2 = new RegExp(/^(((0)?|1)\d{1})-(((0)?|1|2)\d{1})-((19|20)\d{2})/mi)
 
 app.get('/', function (req, res) {
-  res.render('index.njk')
+    res.render('index.pug')
 });
-
-app.post('/api/fileanalyse', upload.single('upfile'), (req, res) => {
-
-  if (!req.file) {
-    res.json({ error: "Provide A File" })
-  }
-  else {
-    let fileInfo = {
-      name: req.file.originalname,
-      type: req.file.mimetype,
-      size: req.file.size
-    };
-    res.json(fileInfo);
-  }
-  
+app.get("/api", (req, res) => {
+    const UNIX = new Date().getTime();
+    const UTC = new Date().toUTCString();
+    res.json({ unix: UNIX, utc: UTC })
+})
+app.get("/api/:date", (req, res) => {
+    const date = req.params.date
+    const regTest1 = regex1.test(date);
+    const regTest2 = regex2.test(date);
+    if (regTest1) {
+        console.log(regTest1)
+        const UNIX = new Date(date).getTime();
+        const UTC = new Date(date).toUTCString();
+        res.json({ unix: UNIX, utc: UTC })
+    }
+    else if(regTest2){
+        console.log("2 if")
+        const UNIX = new Date(date).getTime();
+        const UTC = new Date(date).toUTCString();
+        res.json({ unix: UNIX, utc: UTC })
+    }
+    else {
+        if (isNaN(date)) {
+            console.log("else else")
+            res.json({ error: "Invalid Date" })
+        }
+        else {
+            console.log(regTest1)
+            const UNIX = new Date(parseInt(date)).getTime();
+            const UTC = new Date(parseInt(date)).toUTCString();
+            res.json({ unix: UNIX, utc: UTC })
+        }
+    }
 })
 
 app.listen(process.env.PORT, server());

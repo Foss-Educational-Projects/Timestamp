@@ -1,0 +1,34 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='apple-touch-icon' sizes='180x180' href='./apple-touch-icon.png')
+  link(rel='icon' type='image/png' sizes='32x32' href='./favicon-32x32.png')
+  link(rel='icon' type='image/png' sizes='16x16' href='./favicon-16x16.png')
+  link(rel='manifest' href='./site.webmanifest')
+  link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' href='./css/main.css')
+  title Timestamp
+body
+    .container
+        .header 
+            h1 Timestamp
+            img(src="./images/tslogo.png" alt="Timestamp Logo")
+        section.sample-section
+            a.sample(href="/api/2022-12-15") Sample Test 0
+            a.sample(href="/api/2022-13-15") Sample Test 1
+            a.sample(href="/api/2022-12-42") Sample Test 2
+            a.sample(href="/api/20224-13-42") Sample Test 3
+            a.sample(href="/api/2022-02-2") Sample Test 4
+            a.sample(href="/api/2022-2-02") Sample Test 5
+            a.sample(href="/api/2022-02-21") Sample Test 6
+            a.sample(href="/api/20-01-2023") Sample Test 7
+            a.sample(href="/api/20-01-2-23") Sample Test 8
+            a.sample(href="/api/1451001600000") Sample Test 9
+            a.sample(href="/api/") Sample Test 10
+            a.sample(href="/api/invaliddate") Sample Test 11
+
+        footer.footer
+            span Coded By
+            a.portfolio(href='https://fosterz.netlify.app/') Foster Z
+    script(src='./js/main.js')
