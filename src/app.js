@@ -25,7 +25,7 @@ app.get("/api/:date_string?", (req, res) => {
     const date = req.params.date_string
     if (!isNaN(date)) {
         let dateTime = new Date(parseInt(date)).toUTCString()
-        res.json({ unix: new Date().getTime(), utc: dateTime })
+        res.json({ unix: new Date(parseInt(date)).getTime(), utc: dateTime })
     }
     else {
         let dateTime = new Date(date).toUTCString()
@@ -33,7 +33,6 @@ app.get("/api/:date_string?", (req, res) => {
             res.json({ error: "Invalid Date" })
         }
         else {
-            console.log(dateTime)
             res.json({ unix: new Date(dateTime).getTime(), utc: dateTime })
         }
         
