@@ -18,7 +18,6 @@ app.get('/', function (req, res) {
 });
 app.get("/api", (req, res) => {
     const UNIX = new Date().getTime();
-
     const UTC = new Date().toUTCString();
     res.json({ unix: UNIX, utc: UTC })
 })
@@ -26,16 +25,16 @@ app.get("/api/:date_string?", (req, res) => {
     const date = req.params.date_string
     if (!isNaN(date)) {
         let dateTime = new Date(parseInt(date))
-        res.json({ unix: dateTime })
+        res.json({ unix: new Date().getTime(), utc: dateTime })
     }
     else {
         let dateTime = new Date(date).toUTCString()
-        if (dateTime === "invalid date") {
+        if (dateTime === "Invalid Date") {
             res.json({ error: "Invalid Date" })
         }
         else {
             console.log(dateTime)
-            res.json({ unix: dateTime })
+            res.json({ unix: new Date(dateTime).getTime(), utc: dateTime })
         }
         
     }
