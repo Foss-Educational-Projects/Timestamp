@@ -24,7 +24,7 @@ app.get("/api", (req, res) => {
 app.get("/api/:date_string?", (req, res) => {
     const date = req.params.date_string
     if (!isNaN(date)) {
-        let dateTime = new Date(parseInt(date))
+        let dateTime = new Date(parseInt(date)).toUTCString()
         res.json({ unix: new Date().getTime(), utc: dateTime })
     }
     else {
